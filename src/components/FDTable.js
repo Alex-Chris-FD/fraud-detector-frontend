@@ -15,9 +15,9 @@ function FDTable() {
       <TableHead>
         <TableRow>
           <TableCell>ID</TableCell>
-          <TableCell>sample_fraud_detection_model_insightscore</TableCell>
-          <TableCell>rule_id</TableCell>
-          <TableCell>outcomes</TableCell>
+          <TableCell>Insight Score</TableCell>
+          <TableCell>Risk</TableCell>
+          <TableCell>Outcomes</TableCell>
         </TableRow>
       </TableHead>
       <TableBody>
