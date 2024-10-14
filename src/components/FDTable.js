@@ -4,11 +4,11 @@ import { Table, TableBody, TableCell, TableHead, TableRow } from '@mui/material'
 function FDTable() {
   const [data, setData] = useState([]);
 
-  useEffect(() => {
-    fetch('http://localhost:3000/data')
-      .then(response => response.json())
-      .then(data => setData(data));
-  }, []);
+useEffect(() => {
+  fetch('http://localhost:3000/api/data')
+    .then(response => response.json())
+    .then(data => setData(data));
+}, []);
 
   return (
     <Table>
