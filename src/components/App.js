@@ -6,7 +6,7 @@ function App() {
   const [data, setData] = React.useState([]);
 
   React.useEffect(() => {
-    fetch('http://localhost:3000/api/data')
+    fetch('http://localhost:3001/api/data')
       .then(response => response.json())
       .then(data => setData(data));
   }, []);
@@ -19,15 +19,15 @@ function App() {
       },
       {
         Header: "Insight Score",
-        accessor: "Insight Score",
+        accessor: "sample_fraud_detection_model_insightscore",
       },
       {
         Header: "Risk",
-        accessor: "Risk",
+        accessor: "rule_id",
       },
       {
         Header: "Outcomes",
-        accessor: "Outcomes",
+        accessor: "outcomes",
       },
     ],
     []
